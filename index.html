@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Aceptas una cita?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>¿Aceptarias salir conmigo?</h1>
+    </header>
+    <main>
+        <div id="question-container">
+            <img src="https://i.pinimg.com/236x/aa/b5/47/aab5479f5b54f7208b4050b006bae292.jpg" alt="Imagen de cita" id="main-image">
+            <div class="button-container">
+                <button id="yes-btn">Sí</button>
+                <button id="no-btn">No</button>
+            </div>
+        </div>
+        <div id="options-container" style="display: none;">
+            <h2>Elige una opción:</h2>
+            <ul>
+                <li onclick="showPopup('ir al cine', 'https://i.pinimg.com/236x/d3/45/b6/d345b674be0b04765b2e52494c28bcfa.jpg')">Ir al cine </li>
+                <li onclick="showPopup('Caminar por un parque', 'https://i.pinimg.com/236x/17/b7/b5/17b7b53cf8d754e9359e65fca0696852.jpg')">Caminar por un parque</li>
+                <li onclick="showPopup('Ir por un helado', 'https://i.pinimg.com/236x/ca/90/e5/ca90e517898bcffc2844b08ac68abe4a.jpg')">Ir por un helado</li>
+                <li onclick="showPopup('Todas las anteriores', 'https://i.pinimg.com/236x/49/0c/65/490c653bac7d7497338676d3673601f9.jpg')">Todas las anteriores</li>
+            </ul>
+        </div>
+        <div id="end-container" style="display: none;">
+            <h2>¡Gracias corazón tun tun!</h2>
+        </div>
+        <div id="popup-container" style="display: none;">
+            <div id="popup">
+                <img src="" alt="Imagen de la cita" id="popup-image">
+                <p id="popup-text"></p>
+                <p><small>Mándamelo en captura</small></p>
+                <button onclick="closePopup()">Cerrar</button>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

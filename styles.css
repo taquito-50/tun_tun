@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://c4.wallpaperflare.com/wallpaper/133/974/409/spring-flowers-nature-plants-wallpaper-preview.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(253, 247, 247, 0.056);
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#main-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.button-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e789be;
+    color: #ffffffa0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #ef69e8a3;
+}
+
+#options-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+#options-container li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(241, 225, 225, 0.504);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 239, 239, 0.268);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup {
+    background-color: #bf5ec400;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #df048fa5;
+}
+
+#popup img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
